@@ -1,0 +1,46 @@
+<script lang="ts">
+    export let links: {txt:string;href:string}[]=[]
+</script>
+<div class="flex flex-col gap-[3rem] w-[16.8125rem]">
+    <div class="">
+        <p class="s4 mb-[1rem] text-c-1-a whitespace-nowrap"><slot name="title">Category menu</slot></p>
+        <div
+            class="[&>a]:body flex [&>a]:underline
+            flex-col gap-[.75rem] [&>a]:text-c-2-a
+            [&>a]:decoration-[.5px]
+            "
+        >
+        {#each links as link}
+            <a href={link.href}>{link.txt}</a>
+        {/each}
+        </div>
+    </div>
+    <a
+        href="/"
+        class="button
+    flex h-[3rem]
+    items-center gap-[0.375rem] whitespace-nowrap
+    rounded-[0.75rem] bg-c-1-f
+    px-[1rem] text-c-1-a
+    "
+        ><span><slot >More products</slot></span><span
+            class="flex h-[1rem] w-[1rem] items-center justify-center"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="7"
+                height="10"
+                viewBox="0 0 7 10"
+                fill="none"
+            >
+                <path
+                    d="M2.0332 8.18669L4.7732 5.44669C4.89737 5.32178 4.96706 5.15281 4.96706 4.97669C4.96706 4.80056 4.89737 4.63159 4.7732 4.50669L2.10654 1.84002"
+                    stroke="#151515"
+                    stroke-width="2.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="bevel"
+                />
+            </svg>
+        </span></a
+    >
+</div>

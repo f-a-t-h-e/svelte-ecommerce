@@ -9,6 +9,27 @@
 }
 @tailwind components;
 @layer components {
+	/* .btn {
+		display: inline-flex;
+		height: 3.5rem;
+		padding: 1.125rem 3rem;
+		align-items: center;
+		gap: 0.375rem;
+		flex-shrink: 0;
+		border-radius: 0.75rem;
+		border: 2px solid var(--c-2-c, #92c064);
+	}
+	.btn-filled {
+		display: inline-flex;
+		height: 3.5rem;
+		padding: 0.75rem 3rem;
+		align-items: center;
+		gap: 0.375rem;
+		flex-shrink: 0;
+		border-radius: 0.75rem;
+		border: 2px solid var(--c-2-b, #46760a);
+		background: var(--c-2-a, #6a983c);
+	} */
 	.button {
 		font-family: Poppins;
 		font-size: 0.9375rem;
@@ -30,11 +51,25 @@
 		font-weight: 600;
 		line-height: normal;
 	}
+	.s5 {
+		font-family: Poppins;
+		font-size: 0.9375rem;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+	}
 	.s6 {
 		font-family: Poppins;
 		font-size: 0.75rem;
 		font-style: normal;
 		font-weight: 600;
+		line-height: normal;
+	}
+	.caption {
+		font-family: Open Sans;
+		font-size: 0.75rem;
+		font-style: normal;
+		font-weight: 400;
 		line-height: normal;
 	}
 
