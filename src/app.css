@@ -1,3 +1,6 @@
+@import '@fontsource/poppins';
+@import '@fontsource/open-sans';
+
 @tailwind base;
 @layer base {
 	input {
@@ -5,4 +8,42 @@
 	}
 }
 @tailwind components;
+@layer components {
+	.button {
+		font-family: Poppins;
+		font-size: 0.9375rem;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+	}
+	.s3 {
+		font-family: Poppins;
+		font-size: 1.375rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+	.s4 {
+		font-family: Poppins;
+		font-size: 1.125rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+	.s6 {
+		font-family: Poppins;
+		font-size: 0.75rem;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.body {
+		font-family: Open Sans;
+		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}
 @tailwind utilities;
