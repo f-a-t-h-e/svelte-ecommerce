@@ -2,6 +2,7 @@
 	import '@fontsource/poppins/700.css';
 	import Search from './Search.svelte';
 	import Personal from './Personal.svelte';
+	import DropMenuBtn from '$lib/components/DropMenuBtn.svelte';
 </script>
 
 <div class="header-layout">
@@ -29,6 +30,19 @@
 		<Personal />
 	</div>
 </div>
+<!-- categories filter-nav -->
+<div class="cat-filter-nav">
+	<div class="w-full flex gap-[2.5rem]">
+		<DropMenuBtn txt="Bakery"/>
+		<DropMenuBtn txt="Fruit and vegetables"/>
+		<DropMenuBtn txt="Meat and fish"/>
+		<DropMenuBtn txt="Drinks"/>
+		<DropMenuBtn txt="Kitchen"/>
+		<DropMenuBtn txt="Special nutrition"/>
+		<DropMenuBtn txt="Baby"/>
+		<DropMenuBtn txt="Pharmacy"/>
+	</div>
+</div>
 
 <style lang="postcss">
 	.header-layout {
@@ -39,9 +53,9 @@
 
 		background: var(--c-1-j, #fff);
 	}
-	
+
 	.header-layout > div:first-child {
-		@apply w-full flex min-h-[3rem] max-w-[78.75rem] flex-wrap-reverse items-center justify-center gap-[1rem] py-[1rem];
+		@apply flex min-h-[3rem] w-full max-w-[78.75rem] flex-wrap-reverse items-center justify-center gap-[1rem] py-[1rem];
 	}
 	.header-layout > div:nth-child(2) {
 		@apply flex h-[3rem] w-full justify-between;
@@ -73,4 +87,8 @@
 	}
 
 	/*  */
+	.cat-filter-nav {
+		@apply flex max-w-[78.75rem]  mx-auto bg-c-1-h;
+		padding: 1rem 2.8125rem;
+	}
 </style>
