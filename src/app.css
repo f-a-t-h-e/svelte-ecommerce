@@ -1,0 +1,8 @@
+@tailwind base;
+@layer base {
+	input {
+		all: unset;
+	}
+}
+@tailwind components;
+@tailwind utilities;
