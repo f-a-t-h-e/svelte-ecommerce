@@ -1,12 +1,11 @@
 <script>
-	import '@fontsource/poppins/700.css'
-	import Search from "./Search.svelte";
+	import '@fontsource/poppins/700.css';
+	import Search from './Search.svelte';
 	import Personal from './Personal.svelte';
-
 </script>
 
 <div class="header-layout">
-	<div class="py-[1rem]">
+	<div class="">
 		<div class="h-inline">
 			<p class="text-c-2-a">Chat with us</p>
 			<p class="text-c-1-a">+420 336 775 664</p>
@@ -21,9 +20,9 @@
 	</div>
 	<div class="">
 		<!-- logo -->
-		<div class="h-[3.125rem] mr-1">
+		<div class="mr-1 h-[3.125rem]">
 			<div class="inline-flex py-[1rem]">
-				<div class="w-[11.0625rem] h-[1.125rem] bg-[url(./logo.svg)]"></div>
+				<div class="h-[1.125rem] w-[11.0625rem] bg-[url(./logo.svg)]"></div>
 			</div>
 		</div>
 		<Search />
@@ -40,7 +39,11 @@
 
 		background: var(--c-1-j, #fff);
 	}
-	.header-layout > div {
+	
+	.header-layout > div:first-child {
+		@apply w-full flex min-h-[3rem] max-w-[78.75rem] flex-wrap-reverse items-center justify-center gap-[1rem] py-[1rem];
+	}
+	.header-layout > div:nth-child(2) {
 		@apply flex h-[3rem] w-full justify-between;
 		max-width: 73.125rem;
 		/* flex-direction: column;
@@ -48,6 +51,7 @@
 		align-items: flex-start; */
 	}
 	.header-layout > div > .h-inline {
+		@apply m-auto;
 		display: inline-flex;
 		align-items: center;
 		gap: 2.0625rem;
