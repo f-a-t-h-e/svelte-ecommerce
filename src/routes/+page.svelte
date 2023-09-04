@@ -5,6 +5,8 @@
 	import HeadingSec from './HeadingSec.svelte';
 	import ProductsWCat from './ProductsWCat.svelte';
 	import BasicCategories from './BasicCategories.svelte';
+	import Qoute from './Qoute.svelte';
+	import Scrollable from '$lib/components/Scrollable.svelte';
 </script>
 
 <div class="header-layout">
@@ -75,7 +77,8 @@
 			{ txt: 'Baby', href: '/' }
 		]}
 		products={[{ price: 148 }, { price: 4856, discount: 39 }, { price: 4856, discount: 20 }]}
-	>Best selling products</ProductsWCat>
+		>Best selling products</ProductsWCat
+	>
 	<ProductsWCat
 		links={[
 			{ txt: 'Carrots', href: '/' },
@@ -85,16 +88,59 @@
 			{ txt: 'Meat', href: '/' }
 		]}
 		products={[{ price: 148 }, { price: 4856, discount: 39 }, { price: 4856, discount: 20 }]}
-	>Best from Farmers</ProductsWCat>
+		>Best from Farmers</ProductsWCat
+	>
+	<!-- QOUTES/Scrollable -->
+	<section class="py-4 border borde-c-1-h bg-c-1-j">
+		<!-- heading -->
+		<div class="flex w-full items-center justify-between px-[2.8125rem]">
+			<p class="s4 text-c-1-a">Our customers says</p>
+			<button class="flex items-center gap-[.375rem] p-[.375rem_.75rem]">
+				<p class="button text-c-1-a">Button</p>
+				<span class="flex h-[1rem] w-[1rem] items-center justify-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="6"
+						height="9"
+						viewBox="0 0 6 9"
+						fill="none"
+					>
+						<path
+							d="M1.5332 7.68663L4.2732 4.94663C4.39737 4.82172 4.46706 4.65276 4.46706 4.47663C4.46706 4.30051 4.39737 4.13154 4.2732 4.00663L1.60654 1.33997"
+							stroke="#6A983C"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="bevel"
+						/>
+					</svg>
+				</span>
+			</button>
+		</div>
+		<!-- qoutes -->
+		<Scrollable>
+			<Qoute
+				>{'This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here'}</Qoute
+			>
+			<Qoute
+				>{'This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here'}</Qoute
+			>
+			<Qoute
+				>{'This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here'}</Qoute
+			>
+			<Qoute
+				>{'This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here'}</Qoute
+			>
+		</Scrollable>
+	</section>
 </main>
 
 <style lang="postcss">
 	.header-layout {
-		@apply mx-auto flex max-w-[78.75rem] flex-col items-center bg-c-1-j;
+		@apply mx-auto flex max-w-[78.75rem] flex-col items-center bg-c-1-j px-[2.8125rem];
 	}
 
 	.header-layout > div:first-child {
-		@apply flex min-h-[3rem] w-full max-w-[78.75rem] flex-wrap-reverse items-center justify-center gap-[1rem] py-[1rem];
+		@apply flex min-h-[3rem] w-full flex-wrap-reverse items-center justify-center gap-[1rem] py-[1rem] md:justify-between;
 	}
 	.header-layout > div:nth-child(2) {
 		@apply flex h-[3rem] w-full justify-between;
@@ -104,7 +150,6 @@
 		align-items: flex-start; */
 	}
 	.header-layout > div > .h-inline {
-		@apply m-auto;
 		display: inline-flex;
 		align-items: center;
 		gap: 2.0625rem;
