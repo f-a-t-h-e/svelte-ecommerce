@@ -19,11 +19,11 @@
 			<!-- cat menu -->
 			<BasicCategories
 				links={[
-					{ txt: 'Bakery', href: '/' },
-					{ txt: 'Fruit and vegetables', href: '/' },
-					{ txt: 'Meat and fish', href: '/' },
-					{ txt: 'Drinks', href: '/' },
-					{ txt: 'Kitchen', href: '/' }
+					{ txt: 'Bakery', href: '/Bakery' },
+					{ txt: 'Fruit and vegetables', href: '/Fruit and vegetables' },
+					{ txt: 'Meat and fish', href: '/Meat and fish' },
+					{ txt: 'Drinks', href: '/Drinks' },
+					{ txt: 'Kitchen', href: '/Kitchen' }
 				]}>More categories</BasicCategories
 			>
 			<!-- space for heading -->

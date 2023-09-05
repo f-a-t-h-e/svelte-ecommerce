@@ -37,6 +37,14 @@
 		font-weight: 700;
 		line-height: normal;
 	}
+	.s1 {
+		font-family: Poppins;
+		font-size: 2rem;
+		font-style: normal;
+		font-weight: 600;
+		/* line-height: 140%; 2.8rem */
+		line-height: normal;
+	}
 	.s3 {
 		font-family: Poppins;
 		font-size: 1.375rem;
