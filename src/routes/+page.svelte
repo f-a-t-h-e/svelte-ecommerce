@@ -159,6 +159,65 @@
 		<BlogArea />
 	</section>
 </main>
+<footer class="flex flex-col items-center gap-[3rem] bg-c-1-j px-[2.81rem] py-[4rem]">
+	<!-- lists of menus -->
+	<div class="flex w-full justify-between">
+		<!-- list 1 -->
+		<div class="flex flex-col gap-[1rem]">
+			<p class="s4 text-c-1-a">Get in touch</p>
+
+			<p class="body text-c-2-a">About Us</p>
+			<p class="body text-c-2-a">Careers</p>
+			<p class="body text-c-2-a">Press Releases</p>
+			<p class="body text-c-2-a">Blog</p>
+		</div>
+		<!-- list 1 -->
+		<div class="flex flex-col gap-[1rem]">
+			<p class="s4 text-c-1-a">Connections</p>
+
+			<p class="body text-c-2-a">Facebook</p>
+			<p class="body text-c-2-a">Twitter</p>
+			<p class="body text-c-2-a">Instagram</p>
+			<p class="body text-c-2-a">Youtube</p>
+			<p class="body text-c-2-a">LinkedIn</p>
+		</div>
+		<!-- list 1 -->
+		<div class="flex flex-col gap-[1rem]">
+			<p class="s4 text-c-1-a">Earnings</p>
+
+			<p class="body text-c-2-a">Become an Affiliate</p>
+			<p class="body text-c-2-a">Advertise your product</p>
+			<p class="body text-c-2-a">Sell on Market</p>
+		</div>
+		<!-- list 1 -->
+		<div class="flex flex-col gap-[1rem]">
+			<p class="s4 text-c-1-a">Account</p>
+			<p class="body text-c-2-a">Your account</p>
+			<p class="body text-c-2-a">Returns Centre</p>
+			<p class="body text-c-2-a">100 % purchase protection</p>
+			<p class="body text-c-2-a">Chat with us</p>
+			<p class="body text-c-2-a">Help</p>
+		</div>
+	</div>
+
+	<!-- products tags -->
+	<div class="tags w-full">
+		<p class="s4 mb-[1rem] text-c-1-a">Product tags</p>
+
+		<!-- tags -->
+		<div class="[&_span]:s6">
+			{#each ['Beans', 'Carrots', 'Apples', 'Garlic', 'Mushrooms', 'Tomatoes', 'Chilli peppers', 'Broccoli', 'Watermelons', 'Oranges', 'Bananas', 'Grapes', 'Cherries', 'Meat', 'Seo tag', 'Fish', 'Seo tag', 'Fresh food', 'Lemons'] as tagTxt}
+				<div class="">
+					<span class="">{tagTxt}</span>
+				</div>
+			{/each}
+		</div>
+	</div>
+	<!-- copyright -->
+	<div class="">
+		<p>Copyright © {new Date().getFullYear()} example.com</p>
+	</div>
+</footer>
 
 <style lang="postcss">
 	.header-layout {
@@ -200,5 +259,19 @@
 	.cat-filter-nav {
 		@apply mx-auto flex  max-w-[78.75rem] bg-c-1-h;
 		padding: 1rem 2.8125rem;
+	}
+
+	section {
+		@apply py-[4rem];
+	}
+
+	footer > .tags > div {
+		@apply flex flex-wrap gap-[1rem];
+	}
+	footer > .tags > div > div {
+		@apply flex items-center justify-center rounded-[.75rem] bg-c-1-f px-[.625rem] py-[.25rem];
+	}
+	footer > .tags > div span {
+		@apply text-c-1-a;
 	}
 </style>
