@@ -41,7 +41,7 @@
 <div
 	class="fixed left-[497px] top-[1088px] h-[100px] w-[10px] -translate-x-1/2 -translate-y-1/2 bg-red-600"
 ></div> -->
-<div class="parent-cont relative mt-[2rem] w-full">
+<div class="parent-cont relative w-full">
 	<div class="scroll relative w-full overflow-x-auto" bind:this={parent}>
 		<div class="bg-transparent" style="width: {(parent?.clientWidth - dist) / 2}px;" />
 		<div class="flex w-fit gap-[2rem] px-[1rem]" bind:this={child}>
