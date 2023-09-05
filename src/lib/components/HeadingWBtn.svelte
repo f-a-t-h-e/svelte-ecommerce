@@ -1,5 +1,5 @@
 <!-- heading -->
-<div class="flex w-full items-center justify-between px-[2.8125rem]">
+<div class="flex w-full items-center justify-between">
     <p class="s4 text-c-1-a"><slot>Section Headline</slot></p>
     <button class="flex items-center gap-[.375rem] p-[.375rem_.75rem]">
         <p class="button text-c-1-a">Button</p>

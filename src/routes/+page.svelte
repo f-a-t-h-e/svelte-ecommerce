@@ -9,6 +9,7 @@
 	import Scrollable from '$lib/components/Scrollable.svelte';
 	import HeadingWBtn from '$lib/components/HeadingWBtn.svelte';
 	import ProductCard from '$lib/components/ProductCard.svelte';
+	import BlogArea from './BlogArea.svelte';
 </script>
 
 <div class="header-layout">
@@ -93,9 +94,31 @@
 		>Best from Farmers</ProductsWCat
 	>
 	<!-- QOUTES/Scrollable -->
-	<section class="py-[4rem] border border-c-1-h bg-c-1-j flex flex-col items-center gap-[2rem]">
+	<section class="flex flex-col items-center gap-[2rem] border border-c-1-h bg-c-1-j py-[4rem]">
 		<!-- heading -->
-		<HeadingWBtn>Our customers says</HeadingWBtn>
+		<div class="flex w-full items-center justify-between px-[2.8125rem]">
+			<p class="s4 text-c-1-a">Our customers says</p>
+			<button class="flex items-center gap-[.375rem] p-[.375rem_.75rem]">
+				<p class="button text-c-1-a">Button</p>
+				<span class="flex h-[1rem] w-[1rem] items-center justify-center">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="6"
+						height="9"
+						viewBox="0 0 6 9"
+						fill="none"
+					>
+						<path
+							d="M1.5332 7.68663L4.2732 4.94663C4.39737 4.82172 4.46706 4.65276 4.46706 4.47663C4.46706 4.30051 4.39737 4.13154 4.2732 4.00663L1.60654 1.33997"
+							stroke="#6A983C"
+							stroke-width="2.5"
+							stroke-linecap="round"
+							stroke-linejoin="bevel"
+						/>
+					</svg>
+				</span>
+			</button>
+		</div>
 		<!-- qoutes -->
 		<Scrollable>
 			<Qoute
@@ -114,17 +137,26 @@
 	</section>
 
 	<!-- Products With title -->
-	<section class="py-[4rem] bg-c-1-j flex flex-col items-center gap-[2rem] px-[2.81rem]">
+	<section class="flex flex-col items-center gap-[2rem] bg-c-1-j px-[2.81rem] py-[4rem]">
 		<!-- heading -->
 		<HeadingWBtn>Section Headline</HeadingWBtn>
 
 		<!-- Products -->
 		<div class="flex gap-[2rem]">
-			<ProductCard price={326}/>
-			<ProductCard price={148}/>
-			<ProductCard price={4856} discount={36}/>
-			<ProductCard price={112}/>
+			<ProductCard price={326} />
+			<ProductCard price={148} />
+			<ProductCard price={4856} discount={36} />
+			<ProductCard price={112} />
 		</div>
+	</section>
+
+	<!-- Blog section -->
+	<section class="flex flex-col items-center gap-[2rem] bg-c-1-j px-[2.81rem] py-[4rem]">
+		<!-- heading -->
+		<HeadingWBtn>Read our Blog posts</HeadingWBtn>
+
+		<!-- Blog area -->
+		<BlogArea />
 	</section>
 </main>
 
