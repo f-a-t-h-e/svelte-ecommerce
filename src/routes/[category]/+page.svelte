@@ -4,6 +4,7 @@
 	import CheckBrand from './CheckBrand.svelte';
 	import CheckRating from './CheckRating.svelte';
 	import HeaderFiltres from './HeaderFiltres.svelte';
+	import PriceFiltre from './PriceFiltre.svelte';
 </script>
 
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
@@ -97,5 +98,7 @@
 		/>
 		<!-- check rating filtre -->
 		<CheckRating />
+		<!-- Price filtre -->
+		<PriceFiltre />
 	</div>
 </main>
