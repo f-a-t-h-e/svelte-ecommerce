@@ -1,11 +1,14 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import ProductCard from '$lib/components/ProductCard.svelte';
 	import CategoriesCounting from './CategoriesCounting.svelte';
 	import CheckBrand from './CheckBrand.svelte';
 	import CheckRating from './CheckRating.svelte';
 	import HeaderFiltres from './HeaderFiltres.svelte';
 	import PriceFiltre from './PriceFiltre.svelte';
 	import ProductRow from './ProductRow.svelte';
+
+	let view: "grid" | "list" = "grid";
 </script>
 
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
@@ -14,13 +17,15 @@
 	<p class="caption text-c-1-a">{$page.params.category}</p>
 </div>
 <!-- HEADING -->
+<input class="" type="radio" name="layout-display" id="select-grid-view" hidden value="grid" bind:group={view} checked />
+<input class="" type="radio" name="layout-display" id="select-list-view" hidden value="list" bind:group={view} />
+
 <div class="flex items-center justify-between bg-c-1-j px-[2.8125rem] py-[.5rem]">
 	<h1 class="s1">{$page.params.category}</h1>
-	<div class="flex gap-[1.5rem]">
-		<label class="flex gap-[0.25rem]">
-			<input class="peer" type="radio" name="layout-display" hidden checked />
+	<div class="flex gap-[1.5rem] [&_label]:cursor-pointer">
+		<label class="flex gap-[0.25rem]" for="select-grid-view">
 			<div
-				class="flex h-[1rem] w-[1rem] items-center justify-center stroke-c-1-c peer-checked:stroke-c-2-a"
+				class="flex h-[1rem] w-[1rem] items-center justify-center stroke-c-1-c"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -40,10 +45,9 @@
 			</div>
 			<p class="caption text-c-1-a">Grid view</p>
 		</label>
-		<label class="flex gap-[0.25rem]">
-			<input class="peer" type="radio" name="layout-display" hidden />
+		<label class="flex gap-[0.25rem]" for="select-list-view">
 			<div
-				class="flex h-[1rem] w-[1rem] items-center justify-center stroke-c-1-c peer-checked:stroke-c-2-a"
+				class="flex h-[1rem] w-[1rem] items-center justify-center stroke-c-1-c"
 			>
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -107,11 +111,21 @@
 	</div>
 
 	<!-- feed -->
+	{#if view === "list"}
 	<div class="flex flex-col gap-[2rem]">
 		{#each Array(5).fill('') as product}
 			<ProductRow />
 		{/each}
 	</div>
+	{:else}
+		<div class="grid-view">
+			{#each Array(9).fill({price: 4856, discount: 36}) as product}
+				<ProductCard {...product}/>
+			{/each}
+		</div>
+	{/if}
+
+
 </main>
 <div class="flex w-full items-center justify-between px-[2.8125rem] py-[1rem]">
 	<div class="flex gap-[.5rem]">
@@ -144,3 +158,21 @@
 		<p class="caption text-c-1-c">Products</p>
 	</div>
 </div>
+
+
+<style lang="postcss">
+	#select-grid-view:checked ~ div label[for="select-grid-view"] svg {
+		@apply stroke-c-2-a;
+	}
+	#select-list-view:checked ~ div label[for="select-list-view"] svg {
+		@apply stroke-c-2-a;
+	}
+
+	.grid-view {
+		display: grid;
+		grid-template-columns: repeat(3, auto);
+		grid-template-rows: repeat(auto-fill, 1fr);
+		column-gap: 2rem;
+		row-gap: 3rem;
+	}
+</style>
