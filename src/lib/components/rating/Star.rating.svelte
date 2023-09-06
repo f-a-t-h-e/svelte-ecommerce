@@ -4,10 +4,10 @@
 	export let fillout = 'transparent';
 	export let offset = 50;
 	export let id = (Math.random() + 1).toString(36).substring(7);
-	export let size = 20;
+	export let size: number | undefined ;
 </script>
 
-<svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14"
+<svg xmlns="http://www.w3.org/2000/svg" width={size ?? 15} height={size ?? 14} viewBox="0 0 15 14"
 stroke-width={offset > 0 ? 0 : undefined}
 >
 	<defs>

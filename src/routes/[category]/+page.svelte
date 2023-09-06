@@ -5,6 +5,7 @@
 	import CheckRating from './CheckRating.svelte';
 	import HeaderFiltres from './HeaderFiltres.svelte';
 	import PriceFiltre from './PriceFiltre.svelte';
+	import ProductRow from './ProductRow.svelte';
 </script>
 
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
@@ -74,7 +75,10 @@
 </div>
 <!-- filtres -->
 <HeaderFiltres />
-<main class="mx-auto max-w-[78.75rem] px-[2.8125rem] py-[4rem]">
+<main
+	class="mx-auto grid max-w-[78.75rem] grid-cols-[min-content,auto]
+	gap-[2rem] px-[2.8125rem] py-[4rem]"
+>
 	<!-- more filtres -->
 	<div class="flex w-[16.82688rem] flex-col gap-[3rem]">
 		<!-- categories counting -->
@@ -101,4 +105,42 @@
 		<!-- Price filtre -->
 		<PriceFiltre />
 	</div>
+
+	<!-- feed -->
+	<div class="flex flex-col gap-[2rem]">
+		{#each Array(5).fill('') as product}
+			<ProductRow />
+		{/each}
+	</div>
 </main>
+<div class="flex w-full items-center justify-between px-[2.8125rem] py-[1rem]">
+	<div class="flex gap-[.5rem]">
+		<span class="caption text-c-1-c">Page:</span>
+		{#each Array(4).fill(1) as _, i}
+			<span class="caption text-c-1-a" class:text-c-2-a={i + 1 === 3}>{i + 1}</span>
+		{/each}
+	</div>
+
+	<button
+		class="flex items-center gap-[.375rem] rounded-[.75rem]
+	border-[2px] border-c-2-b bg-c-2-a px-[1rem] py-[.75rem]"
+	>
+		<span class="button text-c-1-j">Show more products</span>
+		<span class="flex h-[1rem] w-[1rem] items-center justify-center">
+			<svg xmlns="http://www.w3.org/2000/svg" width="9" height="7" viewBox="0 0 9 7" fill="none">
+				<path
+					d="M1.31348 2.03333L4.05348 4.77332C4.17838 4.89749 4.34735 4.96719 4.52348 4.96719C4.6996 4.96719 4.86857 4.89749 4.99348 4.77332L7.66014 2.10666"
+					stroke="white"
+					stroke-width="2.5"
+					stroke-linecap="round"
+					stroke-linejoin="bevel"
+				/>
+			</svg>
+		</span>
+	</button>
+
+	<div class="flex gap-[.25rem] h-[1.125rem]">
+		<div class="px-[.5rem] rounded-[.75rem] bg-c-2-e items-center justify-center"><span class="s6 text-c-2-a block">336</span></div>
+		<p class="caption text-c-1-c">Products</p>
+	</div>
+</div>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import SharpStar from './SharpStar.rating.svelte';
+	import Star from './Star.rating.svelte';
 	import calcSlot from './calcSlot';
 
 	export let interactive = false;
@@ -9,9 +9,9 @@
 	export let fill = 'gold';
 	export let fillout = 'transparent';
 	// export let offset = 50;
-	export let size = 20;
+	export let size : number | undefined = undefined;
 
-	export let slotTarget = SharpStar;
+	export let slotTarget = Star;
 
 	export let hoverValue: number | undefined | null = null;
 	export let stepValue: number = 0.25;

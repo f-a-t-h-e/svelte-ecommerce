@@ -1,4 +1,5 @@
-@import '@fontsource/poppins';
+/* @import '@fontsource/poppins'; */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import '@fontsource/open-sans';
 
 @tailwind base;
@@ -55,14 +56,14 @@
 		background: var(--c-2-a, #6a983c);
 	} */
 	.button {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 0.9375rem;
 		font-style: normal;
 		font-weight: 700;
 		line-height: normal;
 	}
 	.s1 {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 2rem;
 		font-style: normal;
 		font-weight: 600;
@@ -70,28 +71,28 @@
 		line-height: normal;
 	}
 	.s3 {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 1.375rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 	}
 	.s4 {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 1.125rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
 	}
 	.s5 {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 0.9375rem;
 		font-style: normal;
 		font-weight: 500;
 		line-height: normal;
 	}
 	.s6 {
-		font-family: Poppins;
+		font-family: Poppins, sans-serif;
 		font-size: 0.75rem;
 		font-style: normal;
 		font-weight: 600;
