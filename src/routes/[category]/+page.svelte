@@ -1,5 +1,6 @@
 <script lang="ts">
     import {page} from "$app/stores";
+	import HeaderFiltres from "./HeaderFiltres.svelte";
 </script>
 
 <div class="py-[1rem] px-[2.8125rem] bg-c-1-j flex">
@@ -8,6 +9,7 @@
     <p class="caption text-c-1-a">{$page.params.category}</p>
 </div>
 <main class="mx-auto max-w-[78.75rem]">
+    <!-- HEADING -->
     <div class="flex justify-between py-[.5rem] px-[2.8125rem] bg-c-1-j items-center">
         <h1 class="s1">{$page.params.category}</h1>
         <div class="flex gap-[1.5rem]">
@@ -43,4 +45,6 @@
             </div>
         </div>
     </div>
+    <!-- filtres -->
+    <HeaderFiltres />
 </main>
