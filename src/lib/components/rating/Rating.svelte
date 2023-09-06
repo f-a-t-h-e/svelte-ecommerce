@@ -1,5 +1,5 @@
 <script lang="ts">
-	import RatingSvg from './RatingSvg.svelte';
+	import SharpStar from './SharpStar.rating.svelte';
 	import calcSlot from './calcSlot';
 
 	export let interactive = false;
@@ -11,14 +11,14 @@
 	// export let offset = 50;
 	export let size = 20;
 
-	export let slotTarget = RatingSvg;
+	export let slotTarget = SharpStar;
 
 	export let hoverValue: number | undefined | null = null;
 	export let stepValue: number = 0.25;
 	let step = stepValue / range;
 </script>
 
-<div class="relative flex w-fit">
+<div class="relative flex w-fit h-[1rem] gap-[0.125rem] items-center">
 	{#if interactive}
 		<label
 			class="absolute right-0 top-1/2 h-fit w-fit -translate-y-1/2 translate-x-[calc(100%+15px)] text-2xl text-white"

@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center gap-[1rem] bg-c-1-j px-[2.8125rem] py-[.5rem]">
+<div class="flex flex-col items-center gap-[1rem] bg-c-1-j px-[2.8125rem] py-[1rem]">
 	<!-- controllers -->
 	<div
 		class="[&_p]:body [&_.check>div>p]:s6 flex w-full gap-[1rem] [&_.check>div>p]:text-c-1-a [&_p]:text-c-1-a"
