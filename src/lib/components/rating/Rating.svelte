@@ -5,8 +5,8 @@
 	export let interactive = false;
 	export let rating = 0;
 	export let range = 5;
-	export let stroke = 'gold';
-	export let fill = 'gold';
+	export let stroke = '#D1D1D1';
+	export let fill = '#FDBC15';
 	export let fillout = 'transparent';
 	// export let offset = 50;
 	export let size : number | undefined = undefined;

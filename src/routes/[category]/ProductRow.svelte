@@ -12,7 +12,7 @@
 			<!--  -->
 			<div class="">
 				<!-- title -->
-				<p class="s4 mb-[.25rem] text-c-1-a">Product title</p>
+				<p class="s4 mb-[.25rem] text-c-1-a"><a href="{location.pathname}/{"Carrots from Tomissy Farm"}">Product title</a></p>
 				<!-- description -->
 				<p class="caption mb-[.5rem] text-c-1-b">Space for a small product description</p>
 

@@ -55,6 +55,27 @@
 		border: 2px solid var(--c-2-b, #46760a);
 		background: var(--c-2-a, #6a983c);
 	} */
+	.with-icon {
+		@apply flex h-fit items-center gap-[.375rem];
+	}
+	.with-icon span.svg {
+		@apply h-[1rem] w-[1rem] flex items-center justify-center;
+	}
+	.with-icon span:not(.svg) {
+		@apply button text-c-1-a;
+	}
+	.btn {
+		@apply with-icon rounded-[.75rem] bg-c-1-f;
+	}
+	.btn-empt {
+		@apply border-[2px] border-c-2-c bg-transparent;
+	}
+	.btn-filled {
+		@apply btn border-[2px] border-c-2-b bg-c-2-a;
+	}
+	.btn-filled span:not(.svg) {
+		@apply text-c-1-j;
+	}
 	.button {
 		font-family: Poppins, sans-serif;
 		font-size: 0.9375rem;
@@ -68,6 +89,13 @@
 		font-style: normal;
 		font-weight: 600;
 		/* line-height: 140%; 2.8rem */
+		line-height: normal;
+	}
+	.s2 {
+		font-family: Poppins;
+		font-size: 26px;
+		font-style: normal;
+		font-weight: 600;
 		line-height: normal;
 	}
 	.s3 {
@@ -109,6 +137,13 @@
 	.body {
 		font-family: Open Sans;
 		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+	.lead {
+		font-family: Open Sans;
+		font-size: 1.0625rem;
 		font-style: normal;
 		font-weight: 400;
 		line-height: normal;

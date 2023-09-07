@@ -30,7 +30,7 @@
 	<!-- details -->
 	<div class="flex flex-col">
 		<div class="">
-			<p class="s5 text-c-1-a">Product Title</p>
+			<p class="s5 text-c-1-a"><a href="{location.pathname}/{"Carrots from Tomissy Farm"}">Product Title</a></p>
 			<p class="caption mt-[.25rem] text-c-1-b">Space for a small product description</p>
 		</div>
 		<div

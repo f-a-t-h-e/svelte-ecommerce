@@ -21,7 +21,7 @@
 <input class="" type="radio" name="layout-display" id="select-list-view" hidden value="list" bind:group={view} />
 
 <div class="flex items-center justify-between bg-c-1-j px-[2.8125rem] py-[.5rem]">
-	<h1 class="s1">{$page.params.category}</h1>
+	<h1 class="s1 text-c-1-a">{$page.params.category}</h1>
 	<div class="flex gap-[1.5rem] [&_label]:cursor-pointer">
 		<label class="flex gap-[0.25rem]" for="select-grid-view">
 			<div
