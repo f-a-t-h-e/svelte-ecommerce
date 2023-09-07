@@ -11,7 +11,7 @@
             "
         >
         {#each links as link}
-            <a href={link.href}>{link.txt}</a>
+            <a href="/categories{link.href}">{link.txt}</a>
         {/each}
         </div>
     </div>

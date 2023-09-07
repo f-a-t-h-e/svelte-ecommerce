@@ -9,6 +9,18 @@
 	import ProductRow from './ProductRow.svelte';
 
 	let view: "grid" | "list" = "grid";
+
+	let products = [
+		{price: 7856, rating: 480},
+		{price: 4856, discount: 36},
+		{price: 4856, rating: 260},
+		{price: 4506, discount: 90, rating: 400},
+		{price: 7880},
+		{price: 4856, discount: 15},
+		{price: 4556, discount: 40, rating: 350},
+		{price: 4856, discount: 36},
+		{price: 4856, discount: 12},
+	]
 </script>
 
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
@@ -119,7 +131,7 @@
 	</div>
 	{:else}
 		<div class="grid-view">
-			{#each Array(9).fill({price: 4856, discount: 36}) as product}
+			{#each products as product}
 				<ProductCard {...product}/>
 			{/each}
 		</div>

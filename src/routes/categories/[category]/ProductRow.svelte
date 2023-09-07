@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import Rating from '$lib/components/rating/Rating.svelte';
 </script>
 
@@ -12,7 +13,7 @@
 			<!--  -->
 			<div class="">
 				<!-- title -->
-				<p class="s4 mb-[.25rem] text-c-1-a"><a href="{location.pathname}/{"Carrots from Tomissy Farm"}">Product title</a></p>
+				<p class="s4 mb-[.25rem] text-c-1-a"><a href="/categories/{$page.params.category}/{"Carrots from Tomissy Farm"}">Product title</a></p>
 				<!-- description -->
 				<p class="caption mb-[.5rem] text-c-1-b">Space for a small product description</p>
 

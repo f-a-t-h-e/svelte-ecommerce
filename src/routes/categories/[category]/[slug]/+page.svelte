@@ -329,7 +329,7 @@
 		<HeadingWBtn
 			>Related products<svelte:fragment slot="btn-txt">More products</svelte:fragment></HeadingWBtn
 		>
-		<div class="flex gap-[2rem]">
+		<div class="flex gap-[2rem] w-full">
 			{#each relatedProducts as product}
 				<ProductCard {...product} />
 			{/each}

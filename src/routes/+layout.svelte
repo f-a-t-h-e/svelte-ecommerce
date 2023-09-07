@@ -30,7 +30,7 @@
 				<!-- logo -->
 				<div class="mr-1 h-[3.125rem]">
 					<div class="inline-flex py-[1rem]">
-						<div class="h-[1.125rem] w-[11.0625rem] bg-[url(./logo.svg)]"></div>
+						<div class="h-[1.125rem] w-[11.0625rem] bg-[url(/logo.svg)]"></div>
 					</div>
 				</div>
 				<Search />

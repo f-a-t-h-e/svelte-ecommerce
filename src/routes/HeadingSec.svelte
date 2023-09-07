@@ -1,6 +1,6 @@
 <div
 				class="flex h-[17.5rem] w-[26.1875rem] flex-col
-			rounded-[0.75rem] bg-[url(./bg/sec.png)] pb-[2rem] pl-[2.0625rem] pt-[3rem]
+			rounded-[0.75rem] bg-[url(/bg/sec.png)] pb-[2rem] pl-[2.0625rem] pt-[3rem]
 			"
 			>
 				<div class="inline-flex flex-col items-start gap-[.5rem]">
