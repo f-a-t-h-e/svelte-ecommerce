@@ -1,4 +1,5 @@
 <script>
+	import { page } from '$app/stores';
 	import DropMenuBtn from '$lib/components/DropMenuBtn.svelte';
 	import '../app.css';
 	import Personal from './Personal.svelte';
@@ -54,7 +55,8 @@
 		<slot />
 
 		<footer class="flex flex-col items-center gap-[3rem] bg-c-1-j px-[2.81rem] py-[4rem]">
-			<!-- lists of menus -->
+			{#if $page.route.id !== "/checkout"}
+				<!-- lists of menus -->
 			<div class="flex w-full justify-between">
 				<!-- list 1 -->
 				<div class="flex flex-col gap-[1rem]">
@@ -107,6 +109,8 @@
 					{/each}
 				</div>
 			</div>
+			{/if}
+			
 			<!-- copyright -->
 			<div class="">
 				<p>Copyright © {new Date().getFullYear()} example.com</p>

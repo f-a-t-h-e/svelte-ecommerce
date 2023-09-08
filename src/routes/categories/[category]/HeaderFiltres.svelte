@@ -320,6 +320,9 @@
 </div>
 
 <style lang="postcss">
+	label {
+		@apply cursor-pointer;
+	}
 	.filtre {
 		@apply flex select-none items-center rounded-[.75rem] border border-c-1-d bg-c-1-h p-[.5625rem_1rem];
 	}

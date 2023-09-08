@@ -4,8 +4,9 @@
 
 @tailwind base;
 @layer base {
-	input {
+	input, textarea {
 		all: unset;
+		@apply cursor-auto box-border;
 	}
 	/* Chrome, Safari, Edge, Opera */
 	input::-webkit-outer-spin-button,
@@ -93,7 +94,7 @@
 	}
 	.s2 {
 		font-family: Poppins;
-		font-size: 26px;
+		font-size: 1.625rem;
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
