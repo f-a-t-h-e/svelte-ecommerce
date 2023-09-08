@@ -1,4 +1,6 @@
 <script lang="ts">
+	import ProductToBuy from "./ProductToBuy.svelte";
+
 	const billingInputs = [
 		{ name: 'first-name', title: 'First name', placeH: 'First name' },
 		{ name: 'last-name', title: 'Last name', placeH: 'Last name' },
@@ -692,6 +694,50 @@
 
 
         <!-- right section / order summary -->
+        <div class="rounded-[.75rem] h-fit border-[1px] border-c-1-d
+        bg-c-1-j py-[2rem] px-[1rem] flex flex-col gap-[2.5rem]">
+            <header class="w-full">
+                <h3 class="s3 mb-[.25rem] text-c-1-a">Order Summary</h3>
+                <div class="flex w-full justify-between gap-[1rem]">
+                    <p class="caption text-c-1-c w-[27.25rem]">Price can change depending on shipping method and taxes of your state.</p>
+                </div>
+            </header>
+
+            <section class="flex flex-col gap-[2rem] w-full">
+                <ProductToBuy />
+                <ProductToBuy />
+            </section>
+
+            <section class="flex flex-col gap-[2rem] w-full">
+                <div class="flex flex-col gap-[.75rem] w-full">
+                    <div class="flex justify-between w-full">
+                        <span class="s6 text-c-1-a">Subtotal</span>
+                        <span class="s6 text-c-1-a">73.98 USD</span>
+                    </div>
+                    <div class="flex justify-between w-full">
+                        <span class="s6 text-c-1-a">Tax</span>
+                        <span class="s6 text-c-1-a">17% 16.53 USD</span>
+                    </div>
+                    <div class="flex justify-between w-full">
+                        <span class="s6 text-c-1-a">Shipping</span>
+                        <span class="s6 text-c-1-a">0 USD</span>
+                    </div>
+                </div>
+
+                <button class="flex border border-c-1-d bg-c-1-h rounded-[.75rem] w-full justify-between py-[.71875rem] px-[1.31rem]">
+                    <span class="body text-c-1-c">Apply promo code</span>
+                    <span class="button text-c-1-a">Apply now</span>
+                </button>
+            </section>
+
+            <section class="flex gap-[2rem] w-full justify-between items-center">
+                <div class="">
+                    <span class="s6 text-c-1-a">Total Order</span>
+                    <p class="caption text-c-2-a">Guaranteed delivery day:  June 12, 2020</p>
+                </div>
+                <span class="s2 text-c-2-a">89.84 USD</span>
+            </section>
+        </div>
 	</div>
 </main>
 
