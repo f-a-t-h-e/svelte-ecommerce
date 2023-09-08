@@ -1,5 +1,5 @@
 <script lang="ts">
-	import ProductToBuy from "./ProductToBuy.svelte";
+	import ProductToBuy from "$lib/components/ProductToBuy.svelte";
 
 	const billingInputs = [
 		{ name: 'first-name', title: 'First name', placeH: 'First name' },

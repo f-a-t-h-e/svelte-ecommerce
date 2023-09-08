@@ -21,9 +21,9 @@
     flex h-[3rem]
     items-center gap-[0.375rem] whitespace-nowrap
     rounded-[0.75rem] bg-c-1-f
-    px-[1rem] text-c-1-a
+    px-[1rem] text-c-1-a w-fit
     "
-        ><span><slot >More products</slot></span><span
+        ><span class="button text-c-1-a"><slot >More products</slot></span><span
             class="flex h-[1rem] w-[1rem] items-center justify-center"
         >
             <svg
