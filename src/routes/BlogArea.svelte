@@ -47,7 +47,7 @@
         <!-- detail -->
         <div class="flex flex-col gap-[.5rem]">
             <!-- tag -->
-            <div class="px-[.5rem] inline-flex rounded-[.75rem] bg-c-2-e">
+            <div class="px-[.5rem] inline-flex rounded-[.75rem] bg-c-2-e w-fit">
                 <p class="s6 text-c-2-a">Vegetable</p>
             </div>
             <!-- title and author details -->

@@ -4,7 +4,7 @@
 	"author": "Fathy Osama",
 	"private": true,
 	"engines": {
-		"node": "18.17.1"
+		"node": "^18.*"
 	},
 	"scripts": {
 		"dev": "vite dev",
