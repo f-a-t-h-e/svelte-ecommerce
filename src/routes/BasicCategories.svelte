@@ -6,7 +6,7 @@
         <p class="s4 mb-[1rem] text-c-1-a whitespace-nowrap"><slot name="title">Category menu</slot></p>
         <div
             class="[&>a]:body flex [&>a]:underline
-            flex-col gap-[.75rem] [&>a]:text-c-2-a
+            flex-col gap-[.75rem] [&>a]:text-c-2-b
             [&>a]:decoration-[.5px]
             "
         >

@@ -54,7 +54,7 @@
 		class="pointer-events-none absolute left-0 top-0 h-full w-full overflow-hidden"
 		data-shadow="white"
 	/>
-	<button class="left-0 rounded-r-xl" on:click={() => move(-1)}>
+	<button class="left-0 rounded-r-xl" on:click={() => move(-1)} aria-label="scroll to left">
 		<div class="">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@
 			</svg>
 		</div>
 	</button>
-	<button class="right-0 rotate-180 rounded-r-xl" on:click={() => move(1)}>
+	<button class="right-0 rotate-180 rounded-r-xl" on:click={() => move(1)} aria-label="scroll to right">
 		<div class="">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"

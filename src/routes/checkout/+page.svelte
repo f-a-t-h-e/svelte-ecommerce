@@ -14,6 +14,11 @@
     
 </script>
 
+<svelte:head>
+	<title>{"Checkout page"}</title>
+	<meta name="description" content="{"Complete your order with this checkout"}">
+</svelte:head>
+
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
 	<p class="caption text-c-1-c"><a href="/">Homepage</a></p>
 	<span class="caption mx-[.5rem] text-c-1-d">/</span>
@@ -186,7 +191,7 @@
 							<span class="s6 text-c-1-a">FedEx</span>
 						</div>
 						<div class="flex items-center gap-[.25rem]">
-							<span class="s6 select-text text-c-2-a">+32 USD</span>
+							<span class="s6 select-text text-c-2-b">+32 USD</span>
 							<span class="s6 rounded-[.75rem] bg-c-1-f px-[.5rem] text-c-1-a"
 								>Additional price</span
 							>
@@ -264,7 +269,7 @@
 							<span class="s6 text-c-1-a">DHL</span>
 						</div>
 						<div class="flex items-center gap-[.25rem]">
-							<span class="s6 select-text text-c-2-a">+15 USD</span>
+							<span class="s6 select-text text-c-2-b">+15 USD</span>
 							<span class="s6 rounded-[.75rem] bg-c-1-f px-[.5rem] text-c-1-a"
 								>Additional price</span
 							>
@@ -558,7 +563,7 @@
                 <div class="">
                     <label class="w-full flex flex-col">
                         <span class="s6 text-c-1-a">Order notes</span>
-                        <div role="textbox" class="overflow-hidden w-full h-fit rounded-[.75rem] border-[1px] border-solid border-c-1-d">
+                        <div role="textbox" aria-label="Order notes" class="overflow-hidden w-full h-fit rounded-[.75rem] border-[1px] border-solid border-c-1-d">
                             <textarea wrap="soft" class="body block w-full bg-c-1-h px-[1.3125rem] py-[.71875rem] text-c-1-a placeholder:text-c-1-c" name="order-notes" cols="10" rows="5" placeholder="Need a specific delivery day? Sending a gitf? Let’s say ..." />
                         </div>
                     </label>
@@ -733,9 +738,9 @@
             <section class="flex gap-[2rem] w-full justify-between items-center">
                 <div class="">
                     <span class="s6 text-c-1-a">Total Order</span>
-                    <p class="caption text-c-2-a">Guaranteed delivery day:  June 12, 2020</p>
+                    <p class="caption text-c-2-b">Guaranteed delivery day:  June 12, 2020</p>
                 </div>
-                <span class="s2 text-c-2-a">89.84 USD</span>
+                <span class="s2 text-c-2-b">89.84 USD</span>
             </section>
         </div>
 	</div>
@@ -756,13 +761,11 @@
 		@apply hidden;
 	}
 	.peer:checked ~ span svg.filled,
-	.peer:checked ~ div svg.filled,
-	.peer:checked ~ svg.filled {
+	.peer:checked ~ div svg.filled {
 		@apply block;
 	}
 	.peer:checked ~ span svg.empty,
-	.peer:checked ~ div svg.empty,
-	.peer:checked ~ svg.empty {
+	.peer:checked ~ div svg.empty {
 		@apply hidden;
 	}
 </style>

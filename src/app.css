@@ -1,6 +1,12 @@
-/* @import '@fontsource/poppins'; */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-@import '@fontsource/open-sans';
+@import '@fontsource/poppins/400.css';
+@import '@fontsource/poppins/500.css';
+@import '@fontsource/poppins/600.css';
+@import '@fontsource/poppins/700.css';
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap'); */
+@import '@fontsource/open-sans/400.css';
+@import '@fontsource/open-sans/500.css';
+@import '@fontsource/open-sans/600.css';
+@import '@fontsource/open-sans/700.css';
 
 @tailwind base;
 @layer base {
@@ -32,6 +38,9 @@
 		appearance: none;
 		margin: 0;
 	}
+	/* svg, img {
+		vertical-align: unset
+	} */
 }
 @tailwind components;
 @layer components {
@@ -53,8 +62,8 @@
 		gap: 0.375rem;
 		flex-shrink: 0;
 		border-radius: 0.75rem;
-		border: 2px solid var(--c-2-b, #46760a);
-		background: var(--c-2-a, #6a983c);
+		border: 2px solid var(--c-2-a, #46760a);
+		background: var(--c-2-b, #6a983c);
 	} */
 	.with-icon {
 		@apply flex h-fit items-center gap-[.375rem];
@@ -72,7 +81,7 @@
 		@apply border-[2px] border-c-2-c bg-transparent;
 	}
 	.btn-filled {
-		@apply btn border-[2px] border-c-2-b bg-c-2-a;
+		@apply btn border-[2px] border-c-2-a bg-c-2-b;
 	}
 	.btn-filled span:not(.svg) {
 		@apply text-c-1-j;

@@ -23,6 +23,11 @@
 	]
 </script>
 
+<svelte:head>
+	<title>{$page.params.category}</title>
+	<meta name="description" content="category">
+</svelte:head>
+
 <div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
 	<p class="caption text-c-1-c"><a href="/">Homepage</a></p>
 	<span class="caption mx-[.5rem] text-c-1-d">/</span>
@@ -83,7 +88,7 @@
 		<div class="flex gap-[0.25rem]">
 			<div class="flex h-full items-center justify-center rounded-[.75rem] bg-c-2-e px-[.5rem]">
 				<!-- dynamic -->
-				<p class="s6 px-[1px] text-c-2-a">117</p>
+				<p class="s6 px-[1px] text-c-2-b">117</p>
 			</div>
 			<p class="caption text-c-1-c">Products</p>
 		</div>
@@ -143,13 +148,12 @@
 	<div class="flex gap-[.5rem]">
 		<span class="caption text-c-1-c">Page:</span>
 		{#each Array(4).fill(1) as _, i}
-			<span class="caption text-c-1-a" class:text-c-2-a={i + 1 === 3}>{i + 1}</span>
+			<span class="caption text-c-1-a" class:text-c-2-b={i + 1 === 3}>{i + 1}</span>
 		{/each}
 	</div>
 
 	<button
-		class="flex items-center gap-[.375rem] rounded-[.75rem]
-	border-[2px] border-c-2-b bg-c-2-a px-[1rem] py-[.75rem]"
+		class="btn-filled px-[1rem] py-[.75rem]"
 	>
 		<span class="button text-c-1-j">Show more products</span>
 		<span class="flex h-[1rem] w-[1rem] items-center justify-center">
@@ -166,7 +170,7 @@
 	</button>
 
 	<div class="flex gap-[.25rem] h-[1.125rem]">
-		<div class="px-[.5rem] rounded-[.75rem] bg-c-2-e items-center justify-center"><span class="s6 text-c-2-a block">336</span></div>
+		<div class="px-[.5rem] rounded-[.75rem] bg-c-2-e items-center justify-center"><span class="s6 text-c-2-b block">336</span></div>
 		<p class="caption text-c-1-c">Products</p>
 	</div>
 </div>

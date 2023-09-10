@@ -28,7 +28,7 @@
 				class="absolute left-[.75rem] top-[.75rem] inline-flex items-center
         gap-[.625rem] px-[.5rem]"
 			>
-				<span class="s6 text-c-2-a">- {discount} %</span>
+				<span class="s6 text-c-2-b">- {discount} %</span>
 			</p>
 		{/if}
 	</div>
@@ -54,7 +54,7 @@
 					<p class="s6 text-c-1-c line-through">{parseFloat((price * 0.01).toFixed(2))}</p>
 				{/if}
 			</div>
-			<button class="">
+			<button class="btn-filled">
 				<span class="button text-c-1-j">Buy now</span>
 			</button>
 		</div>
@@ -63,13 +63,7 @@
 
 <style lang="postcss">
 	button {
-		display: flex;
 		height: 2.25rem;
 		padding: 0.75rem;
-		align-items: center;
-		gap: 0.375rem;
-		border-radius: 0.75rem;
-		border: 2px solid var(--c-2-b, #46760a);
-		background: var(--c-2-a, #6a983c);
 	}
 </style>

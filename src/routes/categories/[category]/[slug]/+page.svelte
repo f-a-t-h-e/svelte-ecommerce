@@ -12,15 +12,20 @@
 	];
 </script>
 
-<div class="flex bg-c-1-j px-[2.8125rem] py-[1rem]">
+<svelte:head>
+	<title>{$page.params.slug}</title>
+	<meta name="description" content="{`Carrots from Tomissy Farm are one of the best on the market. Tomisso and his family are giving a full love to his Bio products. Tomisso’s carrots are growing on the fields naturally.`}">
+</svelte:head>
+
+<div class="flex bg-c-1-j px-[2.8125rem] py-[1rem] w-[78.75rem] mx-auto">
 	<p class="caption text-c-1-c"><a href="/">Homepage</a></p>
 	<span class="caption mx-[.5rem] text-c-1-d">/</span>
-	<p class="caption text-c-1-c"><a href="/{$page.params.category}">{$page.params.category}</a></p>
+	<p class="caption text-c-1-c"><a href="/categories/{$page.params.category}">{$page.params.category}</a></p>
 	<span class="caption mx-[.5rem] text-c-1-d">/</span>
 	<p class="caption text-c-1-a">{$page.params.slug}</p>
 </div>
 
-<main class="w-[78.75rem]">
+<main class="w-[78.75rem] mx-auto">
 	<div class="flex w-full gap-[2rem] px-[2.8125rem] py-[1rem]">
 		<!-- images -->
 		<div class="flex flex-col gap-[2rem]">
@@ -30,11 +35,11 @@
 				<!-- extras -->
 				<div class="absolute left-[1rem] top-[1rem] flex gap-[.75rem]">
 					<p class="flex rounded-[.75rem] bg-c-2-e px-[.625rem] py-[.25rem]">
-						<span class="s6 text-c-2-a">- 36 %</span>
+						<span class="s6 text-c-2-b">- 36 %</span>
 					</p>
 
 					<p class="flex rounded-[.75rem] bg-c-2-e px-[.625rem] py-[.25rem]">
-						<span class="s6 text-c-2-a">Free shipping</span>
+						<span class="s6 text-c-2-b">Free shipping</span>
 					</p>
 				</div>
 			</div>
@@ -110,7 +115,7 @@
 					>
 						<!-- price -->
 						<div class="flex flex-col">
-							<p class="s2 text-c-2-a">36.23 USD</p>
+							<p class="s2 text-c-2-b">36.23 USD</p>
 							<span class="s6 text-c-1-c line-through">48.56 USD</span>
 						</div>
 						<!-- buttons -->
@@ -350,7 +355,7 @@
 		row-gap: 0.75rem;
 	}
 	.details-area > div p[data-change='color'] {
-		@apply text-c-2-a;
+		@apply text-c-2-b;
 	}
 	header {
 		@apply mb-[3rem] w-full;
@@ -376,7 +381,7 @@
 		@apply rounded-[.75rem] bg-c-2-e px-[.5rem];
 	}
 	header label > div > div {
-		@apply text-c-2-a;
+		@apply text-c-2-b;
 	}
 	#select-description-sec:checked ~ header > div:nth-child(2) {
 		@apply col-[1/2];

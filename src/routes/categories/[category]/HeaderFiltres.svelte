@@ -274,7 +274,7 @@
 		<p class="s6 text-c-1-c">Applied filtres:</p>
 
 		<div class="flex items-center gap-[.25rem] px-[.5rem] rounded-[.75rem] bg-c-2-e">
-			<p class="s6 text-c-2-a">Selected Filtre</p>
+			<p class="s6 text-c-2-b">Selected Filtre</p>
 			<div class="flex h-[.75rem] w-[.75rem] items-center justify-center">
 				<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
 					<path
@@ -296,7 +296,7 @@
 		</div>
 
 		<div class="flex items-center gap-[.25rem] px-[.5rem] rounded-[.75rem] bg-c-2-e">
-			<p class="s6 text-c-2-a">Selected Filtre</p>
+			<p class="s6 text-c-2-b">Selected Filtre</p>
 			<div class="flex h-[.75rem] w-[.75rem] items-center justify-center">
 				<svg xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 8 8" fill="none">
 					<path

@@ -58,7 +58,7 @@
 		</div>
 	</label>
 </div>
-<input checked class="peer" type="checkbox" name="show-hide-cart" id="show-hide-cart" hidden />
+<input class="peer" type="checkbox" name="show-hide-cart" id="show-hide-cart" hidden />
 <div
 	class="fixed z-[50] left-[100%] top-0 transition-transform duration-200 peer-checked:-translate-x-full"
 >
@@ -70,10 +70,8 @@
 		@apply relative mt-[.5rem] flex h-[1.9375rem] w-[5.5rem]
         justify-between gap-2 [&>label]:cursor-pointer;
 	}
-	.parent > div {
-		@apply flex h-[1.5rem] w-[1.5rem] items-center justify-center;
-	}
 	.profile {
+		@apply flex h-[1.5rem] w-[1.5rem] items-center justify-center;
 		padding: 1.98px 3px 2px 3px;
 	}
 	.profile svg {

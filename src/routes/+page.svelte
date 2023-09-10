@@ -1,7 +1,7 @@
 <script>
-	import Search from './Search.svelte';
-	import Personal from './Personal.svelte';
-	import DropMenuBtn from '$lib/components/DropMenuBtn.svelte';
+	// import Search from './Search.svelte';
+	// import Personal from './Personal.svelte';
+	// import DropMenuBtn from '$lib/components/DropMenuBtn.svelte';
 	import HeadingSec from './HeadingSec.svelte';
 	import ProductsWCat from './ProductsWCat.svelte';
 	import BasicCategories from './BasicCategories.svelte';
@@ -11,6 +11,11 @@
 	import ProductCard from '$lib/components/ProductCard.svelte';
 	import BlogArea from './BlogArea.svelte';
 </script>
+
+<svelte:head>
+	<title>Freshnesecom</title>
+	<meta name="description" content="Market place for fresh products">
+</svelte:head>
 
 <main class="mx-auto max-w-[78.75rem]">
 	<!-- headings & cat-menu section -->

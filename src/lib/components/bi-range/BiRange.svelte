@@ -109,7 +109,7 @@
 							min -= step;
 						}
 					}}
-				><input type="range" min="0" max="1000" class="block w-full h-full opacity-0"></div>
+				><input aria-label="min" aria-disabled="true" type="range" min="0" max="0" class="block w-full h-full opacity-0"></div>
 			</div>
 
 			<!-- max -->
@@ -145,7 +145,7 @@
 							max -= step;
 						}
 					}}
-				><input type="range" min="0" max="0" class="block w-full h-full opacity-0" ></div>
+				><input aria-label="max" aria-disabled="true" type="range" min="0" max="0" class="block w-full h-full opacity-0" ></div>
 			</div>
 		</div>
 	</div>
@@ -183,7 +183,7 @@
 	</div>
     <div class="flex gap-[2.13rem] items-center mt-[1.9375rem]">
         <!-- apply -->
-        <button class="py-[.75rem] px-[1rem] rounded-[.75rem] border-[2px] border-c-2-b bg-c-2-a">
+        <button class="btn-filled py-[.75rem] px-[1rem]">
             <span class="button text-c-1-j inline-block">Apply</span>
         </button>
         <!-- reset -->
@@ -209,7 +209,7 @@
 	}
 	.controller > div {
 		@apply h-[1.25rem] w-[1.25rem] -translate-x-1/2 -translate-y-1/2 rounded-[.75rem] border border-solid
-                border-c-1-d bg-c-1-h outline-none origin-center cursor-pointer;
+                border-c-1-d bg-c-1-h outline-none origin-center cursor-pointer [&_input]:cursor-pointer;
 		/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); */
 		@apply shadow-md;
 	}

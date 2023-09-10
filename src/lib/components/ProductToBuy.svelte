@@ -140,14 +140,14 @@
         >
             <!-- price -->
             <div class="flex flex-col">
-                <p class="s4 text-c-2-a">36.23 USD</p>
+                <p class="s4 text-c-2-b">36.23 USD</p>
                 <span class="s6 text-c-1-c line-through">48.56 USD</span>
             </div>
             <!-- buttons -->
             <button
                 class="flex h-fit items-center gap-[0.375rem] rounded-[.75rem] border-[1px] border-c-1-d bg-c-1-h p-[0.3125rem]"
             >
-                <span class="body text-c-1-d">1pcs</span>
+                <span class="body text-c-1-b">1pcs</span>
                 <div class="h-[1.25rem] w-[0.0625rem] bg-c-1-d" />
 
                 <div class="flex items-center gap-[.25rem]">

@@ -1,6 +1,6 @@
 <div class="h-[2.625rem] w-[31.25rem]">
 	<div class="flex h-full w-full rounded-[0.75rem] border border-c-1-d bg-c-1-h">
-		<button class="default">
+		<button class="default" aria-label="pick a category">
 			<p>
 				<span class="mr-2">All categories</span>
 				<svg
@@ -21,7 +21,7 @@
 			</p>
 		</button>
 		<input class="grow" type="text" placeholder="Search Products, categories ..." />
-		<button class="search">
+		<button class="search" aria-label="search">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				width="14"

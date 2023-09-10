@@ -4,7 +4,7 @@
 
 		<!-- tag -->
 		<div class="m-[1.5rem] inline-flex items-center rounded-[.75rem] bg-c-2-e px-[.5rem]">
-			<p class="s6 text-c-2-a">Dinner tips</p>
+			<p class="s6 text-c-2-b">Dinner tips</p>
 		</div>
 
 		<!-- pseudo bg -->
@@ -48,7 +48,7 @@
         <div class="flex flex-col gap-[.5rem]">
             <!-- tag -->
             <div class="px-[.5rem] inline-flex rounded-[.75rem] bg-c-2-e w-fit">
-                <p class="s6 text-c-2-a">Vegetable</p>
+                <p class="s6 text-c-2-b">Vegetable</p>
             </div>
             <!-- title and author details -->
             <div class="">

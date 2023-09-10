@@ -8,7 +8,7 @@
     <header class="flex w-full justify-between gap-1 items-center pt-[1.5rem] px-[1rem]">
         <h2 class="s2 text-c-1-a">Shopping cart</h2>
         <label for="show-hide-cart" class="cursor-pointer flex items-center gap-[.25rem]">
-            <span class="caption text-c-1-d">Close</span>
+            <span class="caption text-c-1-c">Close</span>
             <span class="w-[1.5rem] h-[1.5rem] flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
                     <path d="M14.3606 14.36L1.64062 1.63995" stroke="#151515" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="bevel"/>

@@ -24,7 +24,7 @@
 			<div class="product-detail">
 				<p class="body text-c-1-c">Fresheness</p>
 				<p class="body text-c-1-c">
-					<span class="px-[.5px] text-c-2-a">New</span>{' (Extra fresh)'}
+					<span class="px-[.5px] text-c-2-b">New</span>{' (Extra fresh)'}
 				</p>
 
 				<p class="body text-c-1-c">Farm</p>
@@ -34,7 +34,7 @@
 				<p class="body text-c-1-c">Europe</p>
 
 				<p class="body text-c-1-c">Stock</p>
-				<p class="body text-c-2-a">320 pcs</p>
+				<p class="body text-c-2-b">320 pcs</p>
 			</div>
 		</div>
 
